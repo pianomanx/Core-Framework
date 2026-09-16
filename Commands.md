@@ -416,14 +416,23 @@ Moderator Commands
   - Bans the specified player.
   - You cannot ban a staff member of equal or greater rank.
 - ipban
-  - Usage: `::ipban [ip] [time in minutes, -1 for permanent, 0 to unban]`
+  - Usage: `::ipban [ip or username] [time in minutes, -1 for permanent, 0 to unban]`
   - Alias: `::banip`
-  - Bans the specified player.
+  - Bans the specified IP. Accepts a literal IP address, an online player's name, or an offline player's username (their IP is looked up from the database).
   - You cannot ban a staff member of equal or greater rank.
 - syncipbans
   - Usage: `::syncipbans`
   - Alias: `::sip`
   - Syncs/reloads IP bans from the ipbans text file.
+- ipmute
+  - Usage: `::ipmute [ip or username] [time in minutes, -1 for permanent, 0 to unmute]`
+  - Alias: `::muteip`
+  - Mutes the specified IP. Accepts a literal IP address, an online player's name, or an offline player's username (their IP is looked up from the database).
+  - You cannot mute a staff member of equal or greater rank.
+- syncipmutes
+  - Usage: `::syncipmutes`
+  - Alias: `::sipm`
+  - Syncs/reloads IP mutes from the ipmutes text file.
 - bank
   - Usage: `::bank (player) (want box) (want catalog ids)`
   - Shows bank information for the specified player.
